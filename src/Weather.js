@@ -18,10 +18,18 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
     });
   }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+  }
+  function handleCityChange(event) {
+    event.preventDefault();
+  }
+
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="row">
             <div className="col-9">
               <input
@@ -29,6 +37,7 @@ export default function Weather(props) {
                 placeholder="Search a City..."
                 className="form-control"
                 autoFocus="on"
+                onChange={handleCityChange}
               />
             </div>
             <div className="col-3">
