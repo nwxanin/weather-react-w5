@@ -1,0 +1,8 @@
+.WeatherForecast-temperature-max {
+  color: brown;
+}
+.WeatherForecast-temperature-min {
+  color: aqua;
+  opacity: 0.5;
+  margin-left: 5px;
+}
