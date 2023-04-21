@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
+import { Dna } from "react-loader-spinner";
 
 import "./Weather.css";
 
@@ -39,11 +40,11 @@ export default function Weather(props) {
       <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-9">
+            <div className="col-9 placeholder-glow">
               <input
                 type="search"
                 placeholder="Search a City..."
-                className="form-control"
+                className="form-control placeholder"
                 autoFocus="on"
                 onChange={handleCityChange}
               />
@@ -64,6 +65,27 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "loading...";
+
+    return (
+      <div className="text-center">
+        {" "}
+        <Dna
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="dna-loading"
+          wrapperStyle={{}}
+          wrapperClass="dna-wrapper"
+        />{" "}
+        <Dna
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="dna-loading"
+          wrapperStyle={{}}
+          wrapperClass="dna-wrapper"
+        />
+      </div>
+    );
   }
 }

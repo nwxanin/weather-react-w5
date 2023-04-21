@@ -5,7 +5,11 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather defaultCity="Shiraz" />
+        <div>
+          {" "}
+          <Weather defaultCity="Shiraz" />
+        </div>
+
         <footer>
           This project is{" "}
           <a
