@@ -46,7 +46,7 @@ export default function Weather(props) {
             autoFocus="off"
             onChange={handleCityChange}
           />
-          <button className="btn  rounded-end-circle  search-btn" type="button">
+          <button className="btn rounded-end-circle  search-btn" type="button">
             {" "}
             <i className="bi bi-send-fill"></i>
           </button>

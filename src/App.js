@@ -11,13 +11,14 @@ function App() {
         </div>
 
         <footer>
-          This project is{" "}
+          <i class="bi bi-code-slash"></i> Coded with{" "}
+          <i class="bi bi-chat-heart"></i> by nwxanin{" "}
           <a
             href="https://github.com/nwxanin/weather-react-w5"
             target="_blank"
             rel="noreferrer"
           >
-            Open-Source
+            <i class="bi bi-github"></i>
           </a>
         </footer>
       </div>

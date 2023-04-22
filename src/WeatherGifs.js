@@ -6,7 +6,8 @@ export default function WeatherGifs(props) {
       src={require(`./img/${props.number}.gif`)}
       alt="hi"
       width="250"
-      className=" border border-2 rounded-5"
+      height="200"
+      className="rounded-5"
     />
   );
 }

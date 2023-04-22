@@ -4,6 +4,13 @@
 }
 
 .App footer {
-  font-size: 11px;
+  color: #603350;
+  font-family: "Labrada", serif;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
   margin: 10px 0;
+}
+.App footer .bi-github {
+  color: blueviolet;
 }

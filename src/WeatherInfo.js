@@ -6,10 +6,10 @@ import WeatherGifs from "./WeatherGifs";
 
 export default function WeatherInfo(props) {
   return (
-    <div className="WeatherInfo">
+    <div className="WeatherInfo p-3">
       {" "}
-      <div className="row mt-4">
-        <div className="col-6 border border-secondary-subtle border-3 rounded-5 text-center">
+      <div className="row mt-4 ">
+        <div className="col-6 text-center city-info">
           {" "}
           <h1>{props.data.city}</h1>
           <ul>
@@ -26,17 +26,28 @@ export default function WeatherInfo(props) {
       </div>
       <div className="row mt-4">
         <div className="col-6 d-flex ">
-          <div>
-            <WeatherIcon code={props.data.icon} size={54} />
+          <div className="mt-3">
+            <WeatherIcon code={props.data.icon} size={70} />
           </div>
-          <div className="ms-3">
+          <div className="ms-3 mt-1">
             <WeatherTemperature celsius={props.data.temperature} />
           </div>
         </div>
-        <div className="col-6">
+        <div className="col-6 mt-2 ">
           <ul>
-            <li> Humidity:{props.data.humidity} %</li>
-            <li>Wind: {props.data.wind} km/h</li>
+            <li className="humid-wind">
+              {" "}
+              <span>
+                <i class="bi bi-moisture"></i>
+              </span>{" "}
+              Humidity:{props.data.humidity} %
+            </li>
+            <li className="humid-wind">
+              <span>
+                <i class="bi bi-tornado"></i>
+              </span>{" "}
+              Wind: {props.data.wind} km/h
+            </li>
           </ul>
         </div>
       </div>
