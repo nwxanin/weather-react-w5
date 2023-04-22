@@ -3,10 +3,31 @@
   color: rgb(135, 135, 135);
   font-family: arial, sans-serif;
   padding: 16px;
-
   border-radius: 4px;
 }
+.Weather .search-text {
+  background-color: transparent;
+  backdrop-filter: brightness(0.5);
+  border-top-color: plum;
+  border-bottom-color: plum;
+  border-left-color: plum;
+  box-shadow: rgba(0, 0, 0, 0.04) 4px 4px 2px 0;
+}
+.Weather .search-text::placeholder {
+  color: white;
+  opacity: 1;
+}
+.Weather .search-text:focus {
+  outline: none;
+  border: 1px solid transparent;
+  box-shadow: 0 0 4px #719ece;
+  color: white;
+}
 
+.Weather .search-btn {
+  background-color: plum;
+  color: whitesmoke;
+}
 .Weather h1 {
   display: block;
   font-size: 24px;

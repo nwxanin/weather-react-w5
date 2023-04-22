@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
     <div className="WeatherInfo">
       {" "}
       <div className="row mt-4">
-        <div className="col-6">
+        <div className="col-6 border border-secondary-subtle border-3 rounded-5 text-center">
           {" "}
           <h1>{props.data.city}</h1>
           <ul>
